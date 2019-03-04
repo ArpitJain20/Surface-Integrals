@@ -68,7 +68,7 @@ double pot(double u, double v, double x1, double x2, double x3){
         y2=Cs[i][1];
         y3=Cs[i][2];
         double t = sqrt(pow(x1-y1,2)+pow(x2-y2,2)+pow(x3-y3,2));
-        res+= ((x1-y1)*y1*y1 + (x2-y2)*y2*y2 + (x3-y3)*y3*y3)*J/pow(t,3);
+        res+= ((x1-y1)*y1 + (x2-y2)*y2 + (x3-y3)*y3)*J/pow(t,3);
         //res+=J;
     }
     return res;
